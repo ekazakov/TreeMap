@@ -241,6 +241,10 @@ function onDrop(event){
 		
 }
 
+function foo() {
+	
+}
+
 function initTree() {
 	global.dt = new dataTree();
 	global.currentTree = global.dt;
