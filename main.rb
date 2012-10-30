@@ -23,11 +23,6 @@ end
 def has_children?(current_dir)
 	
 	if not File.file?(current_dir) then
-		# Dir.foreach(current_dir) do |item|
-# 			  if File.directory?(current_dir + '/'+item) and item != "." and item != ".."
-# 			  	return true; 
-# 			  end 
-# 		end
 		return ( Dir.entries(current_dir).length > 2 )
 	end	
 	
